@@ -96,6 +96,7 @@ for (let i=0; i<imgFlowArea2.length; i++){
 // scroll event
 const scrollVideo = document.querySelector(".scroll_video");
 const scrollFrame = document.querySelector(".scroll_frame");
+const scrollTab = document.querySelector(".btn_tab_area");
 const scrollFrameStop = document.querySelector(".tab_box");
 const scrollImg01 = document.querySelectorAll(".img_first");
 const scrollImg02 = document.querySelectorAll(".img_second");
@@ -134,6 +135,7 @@ window.addEventListener("scroll",function(){
         scrollFrame.classList.add("hidden");
         for(let i=0; i<scrollImg01.length; i++){
             scrollImg01[i].classList.remove("on");
+            scrollTab.classList.add("on");
         }
         for(let i=0; i<scrollImg02.length; i++){
             scrollImg02[i].classList.add("on");
@@ -144,6 +146,55 @@ window.addEventListener("scroll",function(){
         scrollVideo.classList.add("hidden");
         for(let i=0; i<scrollImg01.length; i++){
             scrollImg01[i].classList.add("on");
+            scrollTab.classList.remove("on");
+            imgTools1[1].classList.remove("on");
+            imgTools1[2].classList.remove("on");
+            imgTools1[0].classList.add("on");
+            imgThum1[1].classList.remove("on");
+            imgThum1[2].classList.remove("on");
+            imgThum1[0].classList.add("on");
+            btnTools1[1].classList.remove("on");
+            btnTools1[2].classList.remove("on");
+            btnTools1[0].classList.add("on");
+
+            imgTools2[1].classList.remove("on");
+            imgTools2[2].classList.remove("on");
+            imgTools2[3].classList.remove("on");
+            imgTools2[4].classList.remove("on");
+            imgTools2[0].classList.add("on");
+            imgThum2[1].classList.remove("on");
+            imgThum2[2].classList.remove("on");
+            imgThum2[3].classList.remove("on");
+            imgThum2[4].classList.remove("on");
+            imgThum2[0].classList.add("on");
+            btnTools2[1].classList.remove("on");
+            btnTools2[2].classList.remove("on");
+            btnTools2[3].classList.remove("on");
+            btnTools2[4].classList.remove("on");
+            btnTools2[0].classList.add("on");
+
+            imgTools3[1].classList.remove("on");
+            imgTools3[2].classList.remove("on");
+            imgTools3[0].classList.add("on");
+            imgThum3[1].classList.remove("on");
+            imgThum3[2].classList.remove("on");
+            imgThum3[0].classList.add("on");
+            btnTools3[1].classList.remove("on");
+            btnTools3[2].classList.remove("on");
+            btnTools3[0].classList.add("on");
+
+            imgTools4[1].classList.remove("on");
+            imgTools4[2].classList.remove("on");
+            imgTools4[3].classList.remove("on");
+            imgTools4[0].classList.add("on");
+            imgThum4[1].classList.remove("on");
+            imgThum4[2].classList.remove("on");
+            imgThum4[3].classList.remove("on");
+            imgThum4[0].classList.add("on");
+            btnTools4[1].classList.remove("on");
+            btnTools4[2].classList.remove("on");
+            btnTools4[3].classList.remove("on");
+            btnTools4[0].classList.add("on");
         }
         for(let i=0; i<scrollImg02.length; i++){
             scrollImg02[i].classList.remove("on");
@@ -262,7 +313,7 @@ window.addEventListener("load",function(){
 
 
 var moveType = 0; 
-var moveSpeed = 3000; 
+var moveSpeed = 9000; 
 var moveWork = false; 
 var movePause = false; 
 function imgMove(){

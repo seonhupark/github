@@ -79,7 +79,7 @@ button{ font-size:1.8rem; }
 .tab_box button.btn_pose:nth-of-type(2){ background:url("../images/ico_pose_left_selected_46px.svg") center no-repeat; background-size:contain; top:425px; right:187px; }
 .tab_box button.btn_pose:nth-of-type(3){ background:url("../images/ico_pose_right_selected_46px.svg") center no-repeat; background-size:contain; top:425px; right:124px; }
 .tab_box button.btn_pose:nth-of-type(4){ background:url("../images/ico_pose_openhands_selected_46px.svg") center no-repeat; background-size:contain; top:425px; right:61px; }
-.img_first{ display:none; }
+.img_first{ width:100%; display:none; }
 .img_first.on{ display:block; }
 .img_second{ display:none; }
 .img_second.on{ display:block; }

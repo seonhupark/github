@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M STUDIO</title>
-    <!-- <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/maum_common.css?ver=20220217073109109"> -->
+
+    <!-- 공통헤더 css 호출 -->
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/pop_common.css?ver=20220222104336834">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/maum_common.css?ver=20220222104336834">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/login_renew.css?ver=20220222104336834">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/academy.css?ver=20220222104832343">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/ecominds.css?ver=20220222104832343">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/user.css?ver=20220222104832343">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/maum_landing_ver3.css?ver=20220222104336834">
+    <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/common/css/all.css">
+    <!-- //공통헤더 css 호출 끝 -->
+
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./resources/css/swiper.min.css"/>
     <link href="./resources/css/font.css" type="text/css" rel="stylesheet">
@@ -13,14 +24,299 @@
 </head>
 <body>
     <!-- #wrap -->
-    <div id="wrap">
+    <div id="wrap" class="maumUI top_banner visual_header">
 
+        <form id="logout-form" action="/logout" method="POST">
+            <input type="hidden" name="_csrf" value="fb64802f-a4a5-4b86-92f7-6f21a37eccc1">
+        </form>
+        <div class="maum_aside logged_in" style="display: block;">
+            <!-- .aside_top -->
+        
+            <div class="aside_top">
+        
+        
+                
+                
+                    <a class="btn_sign login_pop_m" href="#none">로그인</a>
+                
+        
+        
+            </div>
+            <!-- .aside_mid -->
+            <div class="aside_mid">
+                <ul class="m_nav">
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="aiHuman">
+                        <h2><a href="#none">AI Human</a></h2>
+                        <ul class="m_lst">
+                            <li>
+                                <h3><a href="https://human.maum.ai/event/">인공인간 제작 의뢰</a></h3>
+                            </li>
+        
+        
+        
+        
+                            <li>
+                                <h3><a href="https://store.maum.ai/">인공인간 영상 제작</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/home/estimate/krAhb2">인공인간 디바이스 구매</a></h3>
+                            </li>
+        
+        
+        
+                            <!-- [D] 현재는 해당 페이지 없어 우선 주석 처리 해주시고 추후 페이지 생성 시 추가 부탁드립니다. -->
+                            <!-- <li>
+                                <h3><a href="#none">인공인간 App</a></h3>
+                            </li> -->
+        
+        
+        
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="https://fast-aicc.maum.ai/intro">AICC</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="https://edge.maum.ai/">SMART-X</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="https://minutes.maum.ai/">MAUM 회의록</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="/home/krcloudApiServiceMain">CLOUD API</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="https://data.maum.ai/">MAUM DATA</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="/home/pricingPage?lang=ko">가격정책</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="#none" class="move_inquiry">문의하기</a></h2>
+                    </li>
+                    
+                </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            <!-- //.aside_mid -->
+        
+            <!-- .aside_btm -->
+            <div class="aside_btm">
+                
+                <ul>
+                    <li class=""><span>한국어</span></li>
+                    <li class=""><span><a href="/?lang=en">English</a></span></li>
+                </ul>
+                
+            </div>
+            <!-- //.aside_btm -->
+        </div>
         <!-- #header -->
-        <header id="header"></header>
+        <div id="header">
+            <!-- .maum_sta -->
+            <div class="maum_sta">
+                <h1><a href="/">maum.ai</a></h1>
+                <!-- .maum_gnb -->
+                <div class="maum_gnb">
+                    <ul class="nav">
+                                        
+                        
+                        
+                        
+                        <li>
+                            <a href="http://maumacademy.maum.ai/" class="">아카데미</a>
+                        </li>
+                        <li>
+                            <a href="/home/pricingPage?lang=ko" class="">가격정책</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                    </li></ul>
+                </div>
+                <!-- //.maum_gnb -->
+                <!-- .maum_etc -->
+                <div class="maum_etc">
+                    <ul class="nav">
+                        <!-- 로그인X -->
+                        
+                            <li>
+                                <a class="btn_sign login_pop" href="#none">로그인</a>
+                            </li>
+                        
+                        <!-- //로그인X -->
+        
+                        <!-- 로그인O-->
+                        
+                        <!-- //로그인O-->
+        
+                        <li>
+                            <a class="btn_ico lang" href="#none"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-globe fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path></svg></i><span>언어</span></a>
+                            <div class="lstBox">
+                                <ul class="lst">
+                                    <li class="lang_li"><a href="#none">한국어</a></li>
+                                    <li class="lang_li"><a href="/?lang=en" target="_self" title="English">English</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="btn_ico app" href="#none"><span>웹 앱 및 서비스</span></a>
+                            <div class="appBox">
+                                <div class="tit">웹 앱 및 서비스</div>
+                                <ul class="lst">
+                                    <li>
+                                        <a href="/main/krMainHome" target="_blank" title="Cloud API">
+                                            <span class="ico"></span>
+                                            <em>Cloud API</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://builder.maum.ai/?lang=ko" target="_blank" title="AI Human Builder">
+                                            <span class="ico"></span>
+                                            <em>AI Human Builder</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://minutes.maum.ai/" target="_blank" title="maum 회의록">
+                                            <span class="ico"></span>
+                                            <em>maum 회의록</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fast-aicc.maum.ai/login?lang=ko" target="_blank" title="FAST 대화형 AI">
+                                            <span class="ico"></span>
+                                            <em>FAST 대화형 AI</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ava.maum.ai/login" target="_blank">
+                                            <span class="ico"></span>
+                                            <em>AVA</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://edge.maum.ai/" target="_blank">
+                                            <span class="ico"></span>
+                                            <em>AI Edge</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://data.maum.ai/?lang=ko" target="_blank" title="maum DATA">
+                                            <span class="ico"></span>
+                                            <em>maum DATA</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/home/krEcomindsMain" target="_blank" title="eco MINDs">
+                                            <span class="ico"></span>
+                                            <em>eco MINDs</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.maum.ai" target="_blank" title="maum AI store">
+                                            <span class="ico"></span>
+                                            <em>maum AI store</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.maum_etc -->
+                <a class="btn_maum_ham" href="#none">모바일 전체메뉴
+                    <span class="line_top"></span>
+                    <span class="line_mid"></span>
+                    <span class="line_btm"></span>
+                </a>
+            </div>
+            <!-- //.maum_sta -->
+            <!-- .svc_sta -->
+            <div class="svc_sta" style="display: none;">
+                <!-- svc_visual -->
+                <div class="svc_visual">
+                    <h3>AI Edge</h3>
+                    <p class="bg_img"><img src="/aiaas/kr/images/img_visual01.png" alt="Edge AI 이미지"></p>
+                </div>
+                <!-- //svc_visual -->
+                <!-- .lnb -->
+                <div class="lnb">
+                    <h2>
+                        <a href="https://edge.maum.ai/" title="maum Edge" alt="AI Edge">AI Edge</a>
+                    </h2>
+        
+                    <!-- [D] 로컬메뉴  -->
+                    <ul class="nav">
+                        <li><a class="active" href="#stn_overview">Overview</a></li>
+                        <li><a href="#stn_edgeDevice">Edge AI Device</a></li>
+                        <li><a href="#stn_edgeCloud">AI Computing Cloud</a></li>
+                        <li><a href="#stn_svcCase">고객 사례</a></li>
+                        <li><a href="#inquiry">문의하기</a></li>
+                    </ul>
+                </div>
+                <!-- //.lnb -->
+            </div>
+            <!-- //.svc_sta -->
+        </div>
         <!-- //#header -->
         <!-- #contents -->
         <div id="contents">
             <div class="stn visual">
+                <div class="bg_img_area01">
+                    <img src="./resources/images/img_square_w260.svg">
+                    <img src="./resources/images/img_square_w228.svg">
+                    <img src="./resources/images/img_square_w196.svg">
+                    <img src="./resources/images/img_square_w164.svg">
+                    <img src="./resources/images/img_square_w132.svg">
+                    <img src="./resources/images/img_square_w100.svg">
+                </div>
+                <div class="bg_img_area02">
+                    <img src="./resources/images/img_square_w200.svg">
+                    <img src="./resources/images/img_square_w176.svg">
+                    <img src="./resources/images/img_square_w152.svg">
+                    <img src="./resources/images/img_square_w128.svg">
+                    <img src="./resources/images/img_square_w104.svg">
+                    <img src="./resources/images/img_square_w80.svg">
+                </div>
+                <div class="bg_img_area03">
+                    <img src="./resources/images/img_square_pink_w104.svg">
+                    <img src="./resources/images/img_square_w88.svg">
+                    <img src="./resources/images/img_square_w72.svg">
+                    <img src="./resources/images/img_square_w56.svg">
+                    <img src="./resources/images/img_square_w40.svg">
+                    <img src="./resources/images/img_square_w24.svg">
+                </div>
+                <div class="bg_img_area04">
+                    <img src="./resources/images/img_circle_square_w248.png">
+                    <img src="./resources/images/img_circle_square_w248.png">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="cont_small">
                     <h3 class="stn_main_tit">
                         쉽고 빠르게 원하는 인공 인간
@@ -29,7 +325,9 @@
                     <p class="stn_sub_tit">
                         다양한 인공 인간을 사용하여 나만의 콘텐츠를 제작할 수 있습니다.
                     </p>
-                    <a href="http://studio.maum.ai/login" target="_blank" class="link_mstudio">M STUDIO 시작하기</a>
+                    <div class="hover_link_area">
+                        <a href="http://studio.maum.ai/login" target="_blank" class="link_mstudio">M STUDIO 시작하기</a>
+                    </div>
                     <div class="scroll_contents_area">
                         <video loop muted autoplay playsinline class="scroll_video" id="2x_video">
                             <source src="./resources/video/M_studio_LandingPage.mp4">
@@ -136,14 +434,17 @@
                             <div class="swiper-container area01">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./resources/images/img_pose1_width646.png" alt="다양성">
+                                        <!-- <img src="./resources/images/img_pose1_width646.png" alt="다양성"> -->
+                                        <video controls muted autoplay playsinline loop>
+                                            <source src="./resources/video/ysm_news_fin2.mp4">
+                                        </video>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <!-- <div class="swiper-slide">
                                         <img src="./resources/images/img_pose2_width646.png" alt="다양성">
                                     </div>
                                     <div class="swiper-slide">
                                         <img src="./resources/images/img_pose3_width646.png" alt="다양성">
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -167,8 +468,13 @@
                                 <br>초고해상도 지원
                             </p>
                         </div>
-                        <div class="img_area">
-                            <img src="./resources/images/img_4K_preview_width646.png" alt="초고해상도 지원">
+                        <div class="img_area alignFlex">
+                            <video muted autoplay playsinline loop class="w323p">
+                                <source src="./resources/video/ysm_resolution_low_fin.mp4">
+                            </video>
+                            <video muted autoplay playsinline loop class="w323p">
+                                <source src="./resources/video/ysm_resolution_high_fin.mp4">
+                            </video>
                             <p class="ico_4k">
                                 <span>타사</span>
                                 <span>자사</span>
@@ -221,17 +527,26 @@
             </div>
             <div class="stn video_list stn_bg_bk">
                 <h3 class="stn_main_tit">이렇게도 많은 영상을</h3>
-                <!-- <div class="RollDiv" onmouseover="movePause=true;" onmouseleave="goMove();"> -->
-                <div class="RollDiv">
-                    <div>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide01_width638.png"></a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide02_width638.png"> </a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide03_width638.png"></a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide04_width638.png"></a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide05_width638.png"></a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide06_width638.png"></a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide07_width638.png"></a>
-                        <a href="javascript:void(0)"><img src="./resources/images/img_slide08_width638.png"></a>
+                <div class="vdo_area">
+                    <div class="vdo_left_area on">
+                        <img src="./resources/images/img_left01_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left02_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left03_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left04_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left05_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left06_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left07_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_left08_w294.png" alt="다양한 영상 이미지">
+                    </div>
+                    <div class="vdo_right_area on">
+                        <img src="./resources/images/img_right01_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right02_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right03_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right04_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right05_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right06_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right07_w294.png" alt="다양한 영상 이미지">
+                        <img src="./resources/images/img_right08_w294.png" alt="다양한 영상 이미지">
                     </div>
                 </div>
             </div>
@@ -315,6 +630,7 @@
     <script src="./resources/js/jquery.easing.1.3.js"></script>
     <script src="./resources/js/swiper.js"></script>
     <script src="./resources/js/swiper.min.js"></script>
+    <script type="text/javascript" src="https://maum.ai/aiaas/kr/js/common.js?ver=20220222104832343"></script>
     <script src="./resources/js/common.js"></script>
 </body>
 </html>

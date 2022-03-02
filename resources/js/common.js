@@ -50,18 +50,18 @@ var mySwiper1 = new Swiper('.img_area .swiper-container.area02', {
         }
     }
 });
-var mySwiper3 = new Swiper('.img_area .swiper-container.area01', {
-	slidesPerView: 1,
-    spaceBetween: 0,
-	loop: true,
-    loopedSlides:1,
-    centeredSlides : true,
-    speed:2000,
-    autoplay : {
-        delay : 1000,
-        disableOnInteraction : false,
-    },
-});
+// var mySwiper3 = new Swiper('.img_area .swiper-container.area01', {
+// 	slidesPerView: 1,
+//     spaceBetween: 0,
+// 	loop: true,
+//     loopedSlides:1,
+//     centeredSlides : true,
+//     speed:2000,
+//     autoplay : {
+//         delay : 1000,
+//         disableOnInteraction : false,
+//     },
+// });
 var mySwiper2 = new Swiper('.img_flow_area .swiper-container', {
 	slidesPerView: 3,
     spaceBetween: 36,
@@ -257,19 +257,37 @@ var scrollDevice = document.querySelector('.device_list');
 var scrollAni = document.querySelectorAll(".ani");
 var scrAniY,scrAniUp,scrAniDown;
 window.addEventListener('scroll',function(){
-        scrAniY = (scrollDevice.getBoundingClientRect().top + window.pageYOffset) - window.innerHeight;
-        scrAniUp = scrAniY + (window.innerHeight/2 - window.innerHeight/4) <= window.pageYOffset;
-        scrAniDown = scrAniY <= window.pageYOffset;
-        if( scrAniUp ){
-            for(var i=0; i<scrollAni.length; i++){
-                scrollAni[i].classList.add('on');
-            }
-        } //scroll fadein event
-        else if( scrAniDown ){
-            for(var i=0; i<scrollAni.length; i++){
-                scrollAni[i].classList.remove('on');
-            }
-        } //scroll fadeout event
+    scrAniY = (scrollDevice.getBoundingClientRect().top + window.pageYOffset) - window.innerHeight;
+    scrAniUp = scrAniY + (window.innerHeight/2 - window.innerHeight/4) <= window.pageYOffset;
+    scrAniDown = scrAniY <= window.pageYOffset;
+    if( scrAniUp ){
+        for(var i=0; i<scrollAni.length; i++){
+            scrollAni[i].classList.add('on');
+        }
+    } //scroll fadein event
+    else if( scrAniDown ){
+        for(var i=0; i<scrollAni.length; i++){
+            scrollAni[i].classList.remove('on');
+        }
+    } //scroll fadeout event
+})
+
+var scrollVdo = document.querySelector('.vdo_area');
+var scrollVdoLeft = document.querySelector(".vdo_left_area");
+var scrollVdoRight = document.querySelector(".vdo_right_area");
+var scrVdoY,scrVdoUp,scrVdoDown;
+window.addEventListener('scroll',function(){
+    scrVdoY = (scrollVdo.getBoundingClientRect().top + window.pageYOffset) - window.innerHeight;
+    scrVdoUp = scrVdoY + (window.innerHeight/2) <= window.pageYOffset;
+    scrVdoDown = scrVdoY <= window.pageYOffset;
+    if( scrVdoUp ){
+        scrollVdoLeft.classList.remove('on');
+        scrollVdoRight.classList.remove('on');
+    } //scroll fadein event
+    else if( scrVdoDown ){
+        scrollVdoLeft.classList.add('on');
+        scrollVdoRight.classList.add('on');
+    } //scroll fadeout event
 })
 
 // tools tab event
@@ -310,60 +328,6 @@ const loadArea = document.querySelector(".visual .cont_small");
 window.addEventListener("load",function(){
     loadArea.classList.add("on");
 })
-
-
-var moveType = 0; 
-var moveSpeed = 9000; 
-var moveWork = false; 
-var movePause = false; 
-function imgMove(){
-    if(moveWork==false){ 
-        if(moveType==0){ 
-            var aWidth = $(".RollDiv > div > a:first").width();
-            $(".RollDiv > div").append("<a href=\""+$(".RollDiv > div > a:first").attr("href")+"\">" + $(".RollDiv > div > a:first").html()+ "</a>"); 
-            $(".RollDiv > div > a:first").animate(
-                {marginLeft:-aWidth},{duration:moveSpeed,step:function(){
-                    if(movePause==true){
-                        $(this).stop(); 
-                    } 
-                },complete:function(){ 
-                    $(this).remove(); 
-                    imgMove(); 
-                }
-            },'linear'); 
-        }else{ 
-            var aWidth = $(".RollDiv > div > a:last").width();
-            $("<a href=\"" + $(".RollDiv > div > a:last").attr("href")+ "\" style=\"margin-left:-" + aWidth + "px\">" + $(".RollDiv > div > a:last").html()+ "</a>").insertBefore(".RollDiv > div > a:first")
-            $(".RollDiv > div > a:first").animate(
-                {marginLeft:0},{duration:moveSpeed,step:function(){
-                    if(movePause==true){
-                        $(this).stop(); 
-                    } 
-                },complete:function(){ 
-                    $(".RollDiv > div > a:last").remove(); 
-                    imgMove(); 
-                }
-            },'linear'); 
-        }
-    } 
-} 
-function goMove(){ 
-    movePause=false; 
-    if(moveType==0){ 
-        imgMove(); 
-    }else{
-        $(".RollDiv > div > a:first").animate(
-            {marginLeft:0},{duration:moveSpeed,step:function(){ 
-                if(movePause==true){ 
-                    $(this).stop(); 
-                } 
-            },complete:function(){ 
-            imgMove(); 
-            }
-        },'linear'); 
-    }
-}
-imgMove();
 
 v = document.getElementById("2x_video");
 v.playbackRate = 1.5;

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1160" viewBox="0 0 1920 1160">
+    <defs>
+        <linearGradient id="b6sox1t0ga" x2=".855" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fd9283"/>
+            <stop offset=".315" stop-color="#f56fae"/>
+            <stop offset=".67" stop-color="#c15eee"/>
+            <stop offset="1" stop-color="#6769ff"/>
+        </linearGradient>
+    </defs>
+    <path data-name="사각형 879" style="opacity:.35;fill:url(#b6sox1t0ga)" d="M0 0h1920v1160H0z"/>
+    <path data-name="사각형 16" style="fill:#202427;mix-blend-mode:multiply;isolation:isolate" d="M0 0h1920v1160H0z"/>
+</svg>

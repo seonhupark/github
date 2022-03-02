@@ -236,8 +236,7 @@ button{ font-size:1.8rem; }
 .buy_product .link_area{ display:flex; justify-content:center; }
 .link_mstudio_footer{ display:flex; position:relative; justify-content:center; align-items:center; width:184px; height:54px; margin-right:24px; background:url("../images/img_btn_frame02_width184.png") center no-repeat; font-size:1.6rem; color:#fd9283; }
 .link_mstore_footer{ display:flex; justify-content:center; align-items:center; width:184px; height:54px; background:url("../images/img_btn_frame03_width184.png") center no-repeat; font-size:1.6rem; color:#6769ff; }
-.link_mstudio_footer:hover{ color:#fd9283; }
-.link_mstudio_footer:hover::after{ content:""; display:inline-block; position:absolute; width:calc(100% - 4px); height:100%; top:50%; left:50%; background:#fff; transform:translate(-50%,-50%) ; -webkit-transform:translate(-50%,-50%) ; -moz-transform:translate(-50%,-50%) ; -ms-transform:translate(-50%,-50%) ; -o-transform:translate(-50%,-50%) ; }
+
 
 
 /* ---------------------------------------- footer ---------------------------------------- */

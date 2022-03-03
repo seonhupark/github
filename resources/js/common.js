@@ -329,5 +329,22 @@ window.addEventListener("load",function(){
     loadArea.classList.add("on");
 })
 
+//devide img fadein fadeout event
+$(function(){
+    var interval = 3000; 
+    $('.imgs').each(function(){
+        var container = $(this);
+        function switchImg(){
+            var imgs = container.find('img');
+            var first = imgs.eq(0);
+            var second = imgs.eq(1);
+            first.fadeOut(2000).appendTo(container);
+            second.fadeIn(2000);
+        }
+        setInterval(switchImg, interval);
+    });
+});
+
+
 v = document.getElementById("2x_video");
 v.playbackRate = 1.5;

@@ -347,4 +347,4 @@ $(function(){
 
 
 v = document.getElementById("2x_video");
-v.playbackRate = 1.5;
+v.playbackRate = 1.8;

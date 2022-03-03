@@ -41,7 +41,7 @@ button{ font-size:1.8rem; }
 .bg_img_area04 span:nth-of-type(4){ width:24px; height:24px; top:333px; right:162px; background:#6769ff; transform:rotate(330deg); animation:sqToCir 4s 3s infinite; -webkit-animation:sqToCir 4s 3s infinite; -webkit-transform:rotate(330deg); -moz-transform:rotate(330deg); -ms-transform:rotate(330deg); -o-transform:rotate(330deg); }
 @keyframes sqToCir {
     0%{ opacity:1; }
-    50%{ opacity:0.25;  border-radius:48px; }
+    50%{ opacity:0.15;  border-radius:48px; }
     100%{ opacity:1; }
 }
 
